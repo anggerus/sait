@@ -1,0 +1,265 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background: #1b2416;
+  color: white;
+}
+
+header {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0c120d;
+  border-bottom: 2px solid #6c8f59;
+}
+
+header h2 {
+  margin: 0;
+  color: #b4ff75;
+}
+
+nav a {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 7px 10px;
+  color: white;
+  background: #2c3a27;
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+  background: #b4ff75;
+}
+
+main {
+  flex: 1;
+  padding: 35px 8%;
+}
+
+h1 {
+  color: #b4ff75;
+}
+
+h2 {
+  color: #c5ed9f;
+}
+
+h3 {
+  color: #b4ff75;
+}
+
+p {
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.closed {
+  max-width: 700px;
+  margin: 20px 0;
+  padding: 12px 15px;
+  background: #3c281d;
+  border: 2px solid #a66c42;
+  border-radius: 9px;
+}
+
+.closed h2 {
+  margin-top: 0;
+  color: #ffbd7b;
+}
+
+.main-image {
+  display: block;
+  width: 100%;
+  max-width: 750px;
+  margin: 30px auto;
+  border: 3px solid #6c8f59;
+  border-radius: 10px;
+}
+
+.schedule-block {
+  max-width: 500px;
+  margin: 15px 0;
+  padding: 12px 15px;
+  background: #263728;
+  border: 2px solid #66805e;
+  border-radius: 8px;
+}
+
+.schedule-block h2 {
+  margin-top: 0;
+}
+
+.contacts {
+  margin-top: 25px;
+  padding: 12px 15px;
+  background: #263728;
+  border: 2px solid #66805e;
+  border-radius: 8px;
+}
+
+.contacts h2 {
+  margin-top: 0;
+}
+
+.contacts a,
+footer a {
+  color: #b4ff75;
+}
+
+.location-wrapper {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.location-content {
+  flex: 1;
+  min-width: 250px;
+}
+
+.location-image {
+  flex-shrink: 0;
+  width: 500px;
+  max-width: 50%;
+  height: auto;
+  border: 3px solid #6c8f59;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  margin-top: -167px; /*фикс февен поставьте хотя бы три пж( */
+}
+
+
+@media (max-width: 850px) {
+  .location-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .location-image {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 0;
+    order: -1; 
+    margin-bottom: 20px;
+  }
+}
+
+footer {
+  padding: 12px;
+  color: #99a599;
+  background: #0c120d;
+  text-align: center;
+}
+
+footer p {
+  margin: 5px;
+}
+
+footer a {
+  margin: 0 7px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 750px) {
+  header {
+    display: block;
+    padding: 14px;
+  }
+
+  header h2 {
+    margin-bottom: 12px;
+    font-size: 21px;
+  }
+
+  nav a {
+    display: block;
+    margin: 6px 0;
+    padding: 9px 10px;
+    text-align: center;
+  }
+
+  main {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p,
+  li {
+    font-size: 15px;
+  }
+
+  .main-image {
+    width: 100%;
+    max-width: 320px;
+    margin: 22px auto;
+  }
+
+  .closed,
+  .contacts,
+  .schedule-block {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  footer {
+    padding: 14px 8px;
+    font-size: 14px;
+  }
+
+  footer a {
+    display: inline-block;
+    margin: 4px 6px;
+  }
+}
+
+.come-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background: #b4ff75;
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.come-button:hover {
+  background: #9be063;
+  transform: scale(1.02);
+}
+
+@media (max-width: 750px) {
+  .come-button {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+  }
+}

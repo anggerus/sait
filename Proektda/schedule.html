@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Полигон Кипфинчик | Расписание</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h2>Полигон Кипфинчик</h2>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="rules.html">Правила</a>
+    <a href="location.html">Где находится</a>
+    <a href="schedule.html">Расписание</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Расписание игр</h1>
+
+  <!-- Удалён блок .closed -->
+
+  <div class="schedule-block">
+    <h2>Суббота</h2>
+    <p>Заезд игроков: с 9:00</p>
+    <p>Начало игры: в 11:00</p>
+  </div>
+
+  <div class="schedule-block">
+    <h2>Воскресенье</h2>
+    <p>Заезд игроков: с 9:00</p>
+    <p>Начало игры: в 11:00</p>
+  </div>
+
+  <button id="btnCome" class="come-button">Приехать</button>
+</main>
+
+<footer>
+  <p>Полигон Кипфинчик, 2026</p>
+</footer>
+
+<script>
+  // Всплывающее окно с вашим текстом
+  document.getElementById('btnCome').addEventListener('click', function() {
+    alert('Для посещения полигона свяжитесь с организаторами в Telegram или ВКонтакте. НУ А ВООБЩЕ Я СИЖУ ПИШУ ВАМ ЧТО ПОЛИГОН ЗАКРЫТ!!!!!');
+    // Если нужен другой текст — замените строку выше.
+  });
+</script>
+
+</body>
+</html>
